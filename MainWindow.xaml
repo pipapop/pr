@@ -1,0 +1,27 @@
+﻿<Window x:Class="PPPR17.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PPPR17"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Name="Connect" Content="Connect" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="47" Width="74" Click="Connect_Click"/>
+        <Button Name="Add_new" Content="Add New" HorizontalAlignment="Left" Margin="103,10,0,0" VerticalAlignment="Top" Height="47" Width="74" Click="Add_new_Click"/>
+        <Button Name="Delete" Content="Delete" HorizontalAlignment="Left" Margin="197,10,0,0" VerticalAlignment="Top" Height="47" Width="74" Click="Delete_Click"/>
+        <Button Name="Change" Content="Change" HorizontalAlignment="Left" Margin="289,10,0,0" VerticalAlignment="Top" Height="47" Width="74" Click="Change_Click"/>
+        <Button x:Name="Update_DG" Content="Update" HorizontalAlignment="Left" Margin="382,10,0,0" VerticalAlignment="Top" Height="47" Width="74" Click="Update_DG_Click"/>
+
+        <DataGrid Name="MainDG" Margin="0,87,0,0" AutoGenerateColumns="False">
+            <DataGrid.Columns >
+                <DataGridTextColumn Binding="{Binding airplane_id}" Header="airplane_id"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding airplane_name}" Header="airplane_name"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding date_of_issue}" Header="date_of_issue"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding capacity}" Header="capacity"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding last_tech_service}" Header="last_tech_service"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding flight_hours}" Header="flight_hours"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

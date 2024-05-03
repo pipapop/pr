@@ -1,0 +1,24 @@
+﻿<Page x:Class="PPPR17.AddNewData"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PPPR17"
+      mc:Ignorable="d" 
+      
+      Title="AddNewData" Height="350" Width="400">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="11,13,0,0" TextWrapping="Wrap" Text="airplane_name" VerticalAlignment="Top" Height="25" Width="130"/>
+        <TextBox Name="airplane_name" HorizontalAlignment="Left" Margin="146,13,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130                  " Height="25"/>
+        <TextBlock HorizontalAlignment="Left" Margin="11,51,0,0" TextWrapping="Wrap" Text="date_of_issue" VerticalAlignment="Top" Height="25" Width="130"/>
+        <TextBox Name="date_oi" HorizontalAlignment="Left" Margin="146,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130                  " Height="25"/>
+        <TextBlock HorizontalAlignment="Left" Margin="11,89,0,0" TextWrapping="Wrap" Text="capacity" VerticalAlignment="Top" Height="25" Width="130"/>
+        <TextBox Name="capacity" HorizontalAlignment="Left" Margin="146,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130                  " Height="25"/>
+        <TextBlock HorizontalAlignment="Left" Margin="11,127,0,0" TextWrapping="Wrap" Text="last_tech_service" VerticalAlignment="Top" Height="25" Width="130"/>
+        <TextBox Name="Last_ts" HorizontalAlignment="Left" Margin="146,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130                  " Height="25"/>
+        <TextBlock HorizontalAlignment="Left" Margin="11,165,0,0" TextWrapping="Wrap" Text="flight_hours" VerticalAlignment="Top" Height="25" Width="130"/>
+        <TextBox Name="flight_hours" HorizontalAlignment="Left" Margin="146,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130                  " Height="25"/>
+        <Button x:Name="AddBtn" Content="Добавить" HorizontalAlignment="Left" Margin="76,226,0,0" VerticalAlignment="Top" Height="39" Width="97" Click="AddBtn_Click"/>
+    </Grid>
+</Page>
